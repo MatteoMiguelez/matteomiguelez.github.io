@@ -1,13 +1,14 @@
 export function getProjectBasicInfo() {
-    return [{
-        id: 1,
-        name: "Site de recommandation de restaurants",
-        description: "Site web de recommandations de restaurants pour un individu seul ou un groupe d’individus",
-        tasks: "Adaptation d’un algorithme de recommandation de films pour des restaurants, interface restaurateur (création et modification d’un restaurant), email avec code vérification & traitement des données pour l’affichage, la création d’entités...\n",
-        technologies: "Django (Python)",
-        dates: "Octobre 2022 à avril 2023",
-        numberOfPeople: 4,
-    },
+    return [
+        {
+            id: 1,
+            name: "Site de recommandation de restaurants",
+            description: "Site web de recommandations de restaurants pour un individu seul ou un groupe d’individus",
+            tasks: "Adaptation d’un algorithme de recommandation de films pour des restaurants, interface restaurateur (création et modification d’un restaurant), email avec code vérification & traitement des données pour l’affichage, la création d’entités...\n",
+            technologies: "Django (Python)",
+            dates: "Octobre 2022 à avril 2023",
+            numberOfPeople: 4,
+        },
         {
             id: 2,
             name: "Back Office permettant la gestion de projecteurs LED",

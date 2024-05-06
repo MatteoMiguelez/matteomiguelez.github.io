@@ -8,7 +8,6 @@ let projects = []
 
 onBeforeMount(() => {
   projects = getProjectBasicInfo()
-  console.log(projects)
 })
 </script>
 
