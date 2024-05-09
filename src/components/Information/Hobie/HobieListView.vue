@@ -1,5 +1,5 @@
 <script setup>
-import HobieView from "@/components/HobieView.vue";
+import HobieView from "@/components/Information/Hobie/HobieView.vue";
 import { getHobbies } from "@/data/getHobies.js";
 
 const hobbies = getHobbies();

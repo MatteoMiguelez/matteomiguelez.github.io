@@ -1,8 +1,7 @@
 <script setup>
 import Timeline from "primevue/timeline";
-import Card from "primevue/card"
+import Card from "primevue/card";
 import { getCareerInformation } from "@/data/getCareerInformation.js";
-import HobiesView from "@/components/HobieListView.vue";
 
 const careerInformation = getCareerInformation();
 </script>
@@ -33,7 +32,6 @@ const careerInformation = getCareerInformation();
       </Card>
     </template>
   </Timeline>
-  <HobiesView></HobiesView>
 </template>
 
 <style scoped>
