@@ -3,6 +3,7 @@ import MyInformationView from '../components/Information/MyInformationsView.vue'
 import ProjectListView from '../components/Projects/ProjectListView.vue';
 
 const routes = [
+    { path: '/:catchAll(.*)', redirect: '/my-information' },
     { path: '/', redirect: '/my-information' },
     { path: '/my-information', component: MyInformationView },
     { path: '/project-list', component: ProjectListView },
