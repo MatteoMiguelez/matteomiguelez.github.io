@@ -24,11 +24,11 @@ function getTechnologiesText() {
     <template #header>
       <div class="text-center">
         <!-- Due to bug, cannot use :src -->
-        <img v-if="project.id === 1" alt="picture" src="@/assets/sae-recommandation/1.png" class="p-2 picture"
+        <img v-if="project.id === 1" alt="picture" src="@/assets/sae-recommandation-1.png" class="p-2 picture"
              style="max-width:590px"/>
-        <img v-else-if="project.id === 2" alt="picture" src="@/assets/blockudoku/1.png" class="py-2"
+        <img v-else-if="project.id === 2" alt="picture" src="@/assets/blockudoku-1.png" class="py-2"
              style="height:250px"/>
-        <img v-else-if="project.id === 3" alt="picture" src="@/assets/sae-back-office/1.png" class="p-2 picture"
+        <img v-else-if="project.id === 3" alt="picture" src="@/assets/sae-back-office-1.png" class="p-2 picture"
              style="max-width:590px"/>
       </div>
     </template>
