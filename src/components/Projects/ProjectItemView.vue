@@ -7,15 +7,9 @@ const props = defineProps({
 });
 
 function getTechnologiesText() {
-  let text = 'Technologie';
-  text += props.project.technologies.length === 1 ? '' : 's';
-  text += ' : ';
-  if (props.project.technologies.length === 2) {
-    text += props.project.technologies.list[0] + ' & ' + props.project.technologies.list[1]
-  } else {
-    text += props.project.technologies.list[0]
-  }
-  return text;
+  return 'Technologie' + (props.project.technologies.length === 1 ? '' : 's') + ' : ' +
+      props.project.technologies.list[0] +
+      ((props.project.technologies.length === 2) ? (' & ' + props.project.technologies.list[1]) : '');
 }
 </script>
 

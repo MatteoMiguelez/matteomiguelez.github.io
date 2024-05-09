@@ -1,14 +1,8 @@
 <script setup>
-
 import ProjectItemView from "./ProjectItemView.vue";
 import { getProjectBasicInfo } from "@/data/getProjectBasicInfo.js"
-import { onBeforeMount } from "vue";
 
-let projects = []
-
-onBeforeMount(() => {
-  projects = getProjectBasicInfo()
-})
+const projects = getProjectBasicInfo()
 </script>
 
 <template>

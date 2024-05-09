@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import MyInformationView from '../components/Information/MyInformationsView.vue';
+import MyInformationView from '../components/Information/MyInformationView.vue';
 import ProjectListView from '../components/Projects/ProjectListView.vue';
 
 const routes = [
