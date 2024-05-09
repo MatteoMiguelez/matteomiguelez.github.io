@@ -1,17 +1,16 @@
 <script setup lang="ts">
-import ProjectListView from "@/components/ProjectListView.vue";
-import MyInformationsView from "@/components/MyInformationsView.vue";
+
 import FooterView from "@/components/FooterView.vue";
-import {RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import MenuView from "@/components/MenuView.vue";
 </script>
 
 <template>
-  <main>
-    <MenuView></MenuView>
+  <MenuView></MenuView>
+  <main class="p-0 m-0 px-5">
     <RouterView/>
-    <FooterView></FooterView>
   </main>
+  <FooterView></FooterView>
 </template>
 
 <style scoped>

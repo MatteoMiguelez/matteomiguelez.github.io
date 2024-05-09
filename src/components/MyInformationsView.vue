@@ -2,11 +2,13 @@
 import Timeline from "primevue/timeline";
 import Card from "primevue/card"
 import { getCareerInformation } from "@/data/getCareerInformation.js";
+import HobiesView from "@/components/HobieListView.vue";
 
 const careerInformation = getCareerInformation();
 </script>
 
 <template>
+  <h2 class="text-center pt-5">Cursus personnel</h2>
   <Timeline :value="careerInformation" align="alternate" class="customized-timeline pt-5 pb-5">
     <template #marker="slotProps">
         <span class="d-flex align-items-center justify-content-center text-white z-1 shadow-1"
@@ -16,7 +18,7 @@ const careerInformation = getCareerInformation();
         </span>
     </template>
     <template #content="slotProps">
-      <Card class="mt-3">
+      <Card class="mt-3" style="background-color:#f4fffc">
         <template #title>
           <span style="font-weight:bold">{{ slotProps.item.title }}</span>
         </template>
@@ -31,6 +33,7 @@ const careerInformation = getCareerInformation();
       </Card>
     </template>
   </Timeline>
+  <HobiesView></HobiesView>
 </template>
 
 <style scoped>
