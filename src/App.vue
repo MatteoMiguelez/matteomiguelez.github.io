@@ -14,4 +14,14 @@ import MenuView from "@/components/MenuView.vue";
 </template>
 
 <style scoped>
+.list{
+  padding-left:0;
+  padding-right: 0;
+}
+@media (min-width: 450px){
+  .list{
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
 </style>
