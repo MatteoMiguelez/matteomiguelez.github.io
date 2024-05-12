@@ -16,7 +16,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div v-if="project" class="w-100 py-5 px-4">
+  <div v-if="project" class="w-100 py-5">
     <div class="d-flex flex-wrap justify-content-between">
       <div>
         <p style="font-size:25px" class="mb-0">
@@ -46,14 +46,27 @@ onMounted(() => {
     <p class="mt-1">
       Tâches : {{ project.tasks }}
     </p>
-    <div class="d-flex flex-row flex-wrap justify-content-around">
-      <div v-for="number in project.pictureNumber">
-        <img :src="'../../../' + project.picturePath + '/' + number + '.png'" alt="alt"
-             style="display: block; max-height:500px"/></div>
+    <h6 class="text-center pt-2">Captures d'écrans du projet :</h6>
+    <div class="d-flex flex-row flex-wrap justify-content-around pt-4">
+      <div v-for="picture in project.pictures" :class="{ 'col-5': picture.width < 600 }" class="picture-element py-3 card mx-2 my-2">
+        <div class="px-3 pb-3 d-flex justify-content-center">
+          <img :src="'../../../' + picture.link" :alt="picture.alt"
+               style="display: block; max-height:500px; max-width: 100%;" :style="{width: picture.width}"/>
+        </div>
+        <div class="px-4">{{ picture.information }}</div>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-
+@media (max-width: 450px) {
+  .col-6 {
+    width: 100%;
+  }
+  .px-4{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
 </style>

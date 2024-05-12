@@ -7,7 +7,7 @@ import MenuView from "@/components/MenuView.vue";
 
 <template>
   <MenuView></MenuView>
-  <main class="p-0 m-0 px-5">
+  <main class="py-0 m-0 global-padding">
     <RouterView/>
   </main>
   <FooterView></FooterView>
@@ -18,10 +18,20 @@ import MenuView from "@/components/MenuView.vue";
   padding-left:0;
   padding-right: 0;
 }
+
+.global-padding{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
 @media (min-width: 450px){
   .list{
     padding-left: 55px;
     padding-right: 55px;
+  }
+
+  .global-padding{
+    padding-left: 80px !important;
+    padding-right: 80px !important;
   }
 }
 </style>
