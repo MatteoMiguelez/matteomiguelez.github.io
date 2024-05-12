@@ -10,7 +10,7 @@ import Button from "primevue/button";
         <router-link to="/my-information" active-class="active">
           <Button label="INFORMATIONS" link class="my-2" style="color:black"/>
         </router-link>
-        <router-link to="/project-list" active-class="active">
+        <router-link to="/project" active-class="active">
           <Button label="PROJETS" link class="my-2" style="color:black"/>
         </router-link>
       </nav>

@@ -1,16 +1,11 @@
 <script setup>
 import Card from "primevue/card";
 import Button from "primevue/button";
+import { getProjectTechnologiesText } from "@/data/getProjectTechnologiesText.js";
 
 const props = defineProps({
   project: Object,
 });
-
-function getTechnologiesText() {
-  return 'Technologie' + (props.project.technologies.length === 1 ? '' : 's') + ' : ' +
-      props.project.technologies.list[0] +
-      ((props.project.technologies.length === 2) ? (' & ' + props.project.technologies.list[1]) : '');
-}
 </script>
 
 <template>
@@ -33,7 +28,7 @@ function getTechnologiesText() {
             <b>{{ project.name }}</b>
           </p>
           <p class="m-0 pt-2" style="font-size:17px">
-            {{ getTechnologiesText() }}
+            {{ getProjectTechnologiesText(project.technologies) }}
           </p>
         </div>
         <div class="d-flex pe-2 align-self-center flex-row">
@@ -53,7 +48,9 @@ function getTechnologiesText() {
     </template>
     <template #footer>
       <div class="d-flex justify-content-end">
-        <Button label="Plus d'informations" severity="secondary" class="w-full" link/>
+        <router-link :to="{ name: 'Info', params: { id: project.id } }">
+          <Button label="Plus d'informations" severity="secondary" class="w-full" link/>
+        </router-link>
       </div>
     </template>
   </Card>
