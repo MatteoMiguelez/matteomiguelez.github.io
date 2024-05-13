@@ -26,7 +26,7 @@ const list = [
 </script>
 
 <template>
-  <footer style="background-color:#fffaec" class="pt-4 mt-5">
+  <footer style="background-color:#d6fff0" class="pt-4 mt-5">
     <div class="d-flex footer-elements">
       <div>
         <h3 class="pb-2 text-center">Liens</h3>
@@ -89,7 +89,7 @@ const list = [
 }
 
 .links:hover {
-  background-color: #fffaec;
+  background-color: #d6fff0;
 }
 
 .links {

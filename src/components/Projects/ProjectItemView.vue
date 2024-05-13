@@ -49,7 +49,7 @@ const props = defineProps({
     <template #footer>
       <div class="d-flex justify-content-end">
         <router-link :to="{ name: 'Info', params: { id: project.id } }">
-          <Button label="Plus d'informations" severity="secondary" class="w-full" link/>
+          <Button label="Plus d'informations" severity="secondary" class="w-full" link rounded/>
         </router-link>
       </div>
     </template>

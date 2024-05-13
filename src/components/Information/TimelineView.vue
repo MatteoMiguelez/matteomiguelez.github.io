@@ -17,7 +17,7 @@ const careerInformation = getCareerInformation();
         </span>
     </template>
     <template #content="slotProps">
-      <Card class="mt-3" style="background-color:#f4fffc">
+      <Card class="mt-3">
         <template #title>
           <span style="font-weight:bold">{{ slotProps.item.title }}</span>
         </template>

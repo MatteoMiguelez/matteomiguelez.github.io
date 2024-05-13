@@ -12,7 +12,7 @@ export function getProjectFullList() {
                 {
                     link: 'sae-recommandation/1.png',
                     information: "La page d'accueil du site web, on peut voir la liste de recommandations pour " +
-                        "l'utilisateur connectée, affichée à l'aide d'un carrousel. Il y a aussi d'autres liste," +
+                        "l'utilisateur connectée, affichée à l'aide d'un carrousel. Il y a aussi d'autres liste, " +
                         "comme ici celle des meilleurs restaurants italiens, pour laisser plus de choix à l'" +
                         "utilisateur.",
                     alt: 'page accueil',
@@ -20,7 +20,7 @@ export function getProjectFullList() {
                 }, {
                     link: 'sae-recommandation/2.png',
                     information: "La page avec la liste des groupes d'utilisateurs. On peut voir les 3 premiers " +
-                        "membres du groupe et cliquer sur le bouton << Voir les recommandations >> pour avoir la " +
+                        "membres du groupe et cliquer sur le bouton \"Voir les recommandations\" pour avoir la " +
                         "liste des recommandations faite pour le groupe. Ces recommandations font en sorte de " +
                         "suivre les goûts de tous les utilisateurs du groupe. Un utilisateur peut créer un groupe " +
                         "avec les personnes qu'il souhaite à partir de leur adresse électronique.",
@@ -28,7 +28,13 @@ export function getProjectFullList() {
                     width: 605
                 }
             ],
-            pictureNumber: 2,
+            links: [
+                {
+                    link: 'https://github.com/Galland-Mael/SAE-Recommandation',
+                    name: 'Github',
+                    text: 'Lien vers le code source du projet : '
+                }
+            ],
         }, {
             ...secondProject,
             tasks: "Création des différentes formes avec Inkscape, développement des fenêtres et algorithmes de jeu " +
@@ -37,7 +43,7 @@ export function getProjectFullList() {
             pictures: [
                 {
                     link: 'blockudoku/2.png',
-                    information: "Écran principal de l'application, il permet de jouer au blockudoku. Le joueur à 3 " +
+                    information: "Écran principal de l'application, il permet de jouer au Blockudoku. Le joueur à 3 " +
                         "pièces possible à poser sur la grille par tour. D'abord, il sélectionne la pièce qu'il " +
                         "souhaite déposer sur la grille (en cliquant sur celle-ci). Ensuite, il clique sur la case " +
                         "sur laquelle il souhaite que la partie la plus en haut à gauche de la pièce soit déposée. " +
@@ -47,28 +53,39 @@ export function getProjectFullList() {
                     width: 545,
                 }, {
                     link: 'blockudoku/3.png',
-                    information: "Écran de fin de jeu. Lorsque le joueur n'a plus la possibilité de jouer, cette écran" +
-                        "apparaît avec son score. Il peut l'enregistrer et voir les autres meilleurs scores, chacun" +
-                        "rattachés à un pseudonyme. Il peut aussi voir la liste complète des scores, quitter le jeu, " +
-                        "ou relancer une nouvelle partie.",
+                    information: "Écran de fin de jeu. Lorsque le joueur n'a plus la possibilité de jouer, cette " +
+                        "écran apparaît avec son score. Il peut l'enregistrer et voir les autres meilleurs " +
+                        "scores, chacun rattaché à un pseudonyme. Il peut aussi voir la liste complète des scores, " +
+                        "quitter le jeu, ou relancer une nouvelle partie.",
                     alt: 'ecran fin',
                     width: 430,
                 }
             ],
-            pictureNumber: 3,
+            links: [
+                {
+                    link: 'https://github.com/MatteoMiguelez/Blockudoku-code',
+                    name: 'Github',
+                    text: 'Lien vers le code source du projet : '
+                },
+                {
+                    link: 'https://github.com/MatteoMiguelez/Blockudoku',
+                    name: 'Jeu',
+                    text: 'Lien vers le jeu téléchargeable : '
+                }
+            ],
         }, {
             ...thirdProject,
             tasks: "Backend -> Création d'une route paginer permettant de récupérer les utilisateurs de l'application.\n" +
-                "Frontend -> Affichage de la liste pagignée des utilisateurs, de la liste des projecteurs de " +
+                "Frontend -> Affichage de la liste paginée des utilisateurs, de la liste des projecteurs de " +
                 "l'entreprise avec leur version, modifiable. Fenêtre d'ajout de produits, de modification de version. " +
                 "Formulaire d'envoi de notifications à l'application mobile",
-            context: 'Projet de groupe éffectué dans le cadre de ma troisième année de BUT.',
+            context: 'Projet de groupe effectué dans le cadre de ma troisième année de BUT.',
             pictures: [
                 {
                     link: 'sae-back-office/1.png',
                     information: "Page principale du backOffice, les administrateurs ont accès à la liste paginée " +
                         "de tous les utilisateurs de l'application mobile. Ils peuvent faire une recherche sur le " +
-                        "nom, le prénom et l'adresse email de l'utilisateur, ainsi que faire un tri de la liste" +
+                        "nom, le prénom et l'adresse email de l'utilisateur, ainsi que faire un tri de la liste " +
                         "par ordre croissant ou décroissant sur tous les champs. Le crayon vert permet l'ouverture " +
                         "de la fenêtre ci-après.",
                     alt: 'liste utilisateurs',
@@ -76,7 +93,7 @@ export function getProjectFullList() {
                 }, {
                     link: 'sae-back-office/2.png',
                     information: "Cette fenêtre permet de mettre à jour l'adresse email d'un utilisateur. C'était " +
-                        "une amélioration à apporter à l'ancien produit, que nous avons donc ajouter dans notre" +
+                        "une amélioration à apporter à l'ancien produit, que nous avons donc ajouté dans notre " +
                         "nouvelle version.",
                     alt: 'modification email',
                     width: 400,
@@ -84,7 +101,7 @@ export function getProjectFullList() {
                     link: 'sae-back-office/4.png',
                     information: "Sur une deuxième page, les administrateurs ont accès à la liste des produits" +
                         "(projecteurs), avec leur dernière version. Elle peut aussi être triée par ordre croissant " +
-                        "ou décroissant. Avec le bouton '+', il est possible de créer une nouvelle version du " +
+                        "ou décroissant. Avec le bouton \"+\", il est possible de créer une nouvelle version du " +
                         "produit (présenté ci-après).",
                     alt: 'liste produits',
                     width: 500,
@@ -92,7 +109,7 @@ export function getProjectFullList() {
                     link: 'sae-back-office/3.png',
                     information: "Cette fenêtre permet donc de créer une nouvelle version pour chaque produit. L'" +
                         "administrateur doit entrer une date, un numéro de version et un fichier qui permet de lier " +
-                        "le projecteur à l'application mobile de l'utilsateur. A chaque changement de version, l'" +
+                        "le projecteur à l'application mobile de l'utilisateur. À chaque changement de version, l'" +
                         "application mobile propose la mise à jour du produit à l'utilisateur.",
                     alt: 'nouvelle version',
                     width: 400,
@@ -104,7 +121,6 @@ export function getProjectFullList() {
                     width: 605,
                 }
             ],
-            pictureNumber: 5,
         }
     ]
 }

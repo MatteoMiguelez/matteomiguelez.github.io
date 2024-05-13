@@ -38,7 +38,7 @@ onMounted(() => {
       Période : {{ project.dates }}
     </p>
     <p class="m-0 mt-3">
-      Description: {{ project.description }}
+      Description : {{ project.description }}
     </p>
     <p class="mt-1">
       Contexte : {{ project.context }}
@@ -46,9 +46,13 @@ onMounted(() => {
     <p class="mt-1">
       Tâches : {{ project.tasks }}
     </p>
+    <p v-for="link in project.links">
+      {{ link.text}}<a :href="link.link" class="links">{{link.name}}</a>
+    </p>
     <h6 class="text-center pt-2">Captures d'écrans du projet :</h6>
     <div class="d-flex flex-row flex-wrap justify-content-around pt-4">
-      <div v-for="picture in project.pictures" :class="{ 'col-5': picture.width < 600 }" class="picture-element py-3 card mx-2 my-2">
+      <div v-for="picture in project.pictures" :class="{ 'col-5': picture.width < 600 }"
+           class="picture-element py-3 card mx-2 my-2">
         <div class="px-3 pb-3 d-flex justify-content-center">
           <img :src="'../../../' + picture.link" :alt="picture.alt"
                style="display: block; max-height:500px; max-width: 100%;" :style="{width: picture.width}"/>
@@ -60,11 +64,16 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.links:hover {
+  background-color: #ffffff;
+}
+
 @media (max-width: 450px) {
   .col-6 {
     width: 100%;
   }
-  .px-4{
+
+  .px-4 {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }

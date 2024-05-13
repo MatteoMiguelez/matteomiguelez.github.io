@@ -3,7 +3,7 @@ import Button from "primevue/button";
 </script>
 
 <template>
-  <header style="background-color:#6dd3c8">
+  <header style="background-color:#a7fff4">
     <div class="d-flex flex-wrap align-items-center menu">
       <h5 class="mt-2 menu-name">Mattéo Miguelez</h5>
       <nav class="d-flex menu-items">
@@ -42,6 +42,6 @@ import Button from "primevue/button";
 }
 
 .active{
-  background-color: #67eccc;
+  background-color: #d6fff0;
 }
 </style>
