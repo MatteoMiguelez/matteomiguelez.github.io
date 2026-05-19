@@ -9,22 +9,46 @@ import Menu from '@/home/components/menu/Menu.vue';
 <template>
   <Menu></Menu>
   <div class="home">
-    <Presentation id="presentation"></Presentation>
-    <Career id="career"></Career>
-    <Projects id="projects"></Projects>
-    <Contact id="contact"></Contact>
+    <div class="home__item">
+      <Presentation id="presentation"></Presentation>
+    </div>
+    <div class="home__item home__item-background">
+      <Projects id="projects"></Projects>
+    </div>
+    <div class="home__item">
+      <Career id="career"></Career>
+    </div>
+    <div class="home__item">
+      <Contact id="contact"></Contact>
+    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+.test {
+  background-color: var(--p-surface-950);
+}
+
 .home {
   display: flex;
   flex-direction: column;
-  gap: 64px;
-  padding: 32px 64px;
+  gap: 98px;
+  padding: 64px 0;
+
+  &__item {
+    padding: 64px 64px;
+  }
+
+  &__item-background {
+    background-color: var(--p-surface-950);
+  }
 
   @media (max-width: 768px) {
-    padding: 16px 32px;
+    padding: 64px 0;
+
+    &__item {
+      padding: 32px 32px;
+    }
   }
 }
 </style>

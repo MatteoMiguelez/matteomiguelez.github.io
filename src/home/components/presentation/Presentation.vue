@@ -21,7 +21,9 @@ import { PRESENTATION_DESCRIPTION } from '@/home/constants/presentation-descript
       </div>
     </div>
     <div class="presentation__illustration">
-      <img src="/public/presentation-code.avif" alt="Code" height="350" class="presentation__img" />
+      <div class="presentation__image-container">
+        <img src="/public/presentation-code.avif" alt="Code" height="350" class="presentation__img" />
+      </div>
     </div>
   </div>
 </template>
@@ -30,10 +32,13 @@ import { PRESENTATION_DESCRIPTION } from '@/home/constants/presentation-descript
 .presentation {
   display: flex;
   align-items: center;
-  padding: 128px 0;
-  gap: 64px;
+  gap: 128px;
 
   &__illustration {
+    padding-right: 16px;
+  }
+
+  &__image-container {
     position: relative;
     display: inline-block;
     height: 100%;
