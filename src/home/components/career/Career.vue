@@ -19,7 +19,7 @@ const items = ref(PROFESSIONAL_CAREER_LIST);
 
 <style scoped lang="scss">
 .career {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 64px;
   padding: 0 64px;

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Menu from '../components/Menu.vue';
 import Contact from '@/home/components/contact/Contact.vue';
 import Projects from '@/home/components/projects/Projects.vue';
 import Career from '@/home/components/career/Career.vue';
 import Presentation from '@/home/components/presentation/Presentation.vue';
+import Menu from '@/home/components/menu/Menu.vue';
 </script>
 
 <template>
@@ -22,5 +22,9 @@ import Presentation from '@/home/components/presentation/Presentation.vue';
   flex-direction: column;
   gap: 64px;
   padding: 32px 64px;
+
+  @media (max-width: 768px) {
+    padding: 16px 32px;
+  }
 }
 </style>

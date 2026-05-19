@@ -29,13 +29,18 @@ import { PRESENTATION_DESCRIPTION } from '@/home/constants/presentation-descript
 <style scoped lang="scss">
 .presentation {
   display: flex;
+  align-items: center;
   padding: 128px 0;
-  gap: 128px;
+  gap: 64px;
 
   &__illustration {
     position: relative;
     display: inline-block;
     height: 100%;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
 
     &::after {
       content: '';
