@@ -24,7 +24,7 @@ const LINKEDIN_LINK = 'https://www.linkedin.com/in/mattéomiguelez/';
       <div class="contact__find-me">
         <span class="contact__find-me-text">RETROUVEZ-MOI SUR</span>
         <div class="contact__buttons">
-          <Button as="a" :href="GITHUB_LINK" icon="pi pi-github" label="Github" size="large"
+          <Button as="a" :href="GITHUB_LINK" icon="pi pi-github" target="_blank" label="Github" size="large"
                   severity="secondary" class="contact__button"></Button>
           <Button as="a" :href="LINKEDIN_LINK" icon="pi pi-linkedin" target="_blank" label="Linkedin" size="large"
                   severity="secondary" class="contact__button"></Button>
@@ -43,6 +43,7 @@ const LINKEDIN_LINK = 'https://www.linkedin.com/in/mattéomiguelez/';
   &__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 96px;
     background-color: var(--p-surface-950);
     padding: 48px;
@@ -67,6 +68,7 @@ const LINKEDIN_LINK = 'https://www.linkedin.com/in/mattéomiguelez/';
 
   &__buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     padding: 16px 0;
   }
@@ -83,7 +85,7 @@ const LINKEDIN_LINK = 'https://www.linkedin.com/in/mattéomiguelez/';
     border: 1px dashed var(--p-surface-800);
     border-radius: 16px;
     font-style: italic;
-    width: 416px
+    max-width: 416px
   }
 
   &__find-me {
