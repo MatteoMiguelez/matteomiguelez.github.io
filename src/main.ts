@@ -64,6 +64,11 @@ app.use(PrimeVue, {
 				options: {
 						darkModeSelector: 'system'
 				}
+		},
+		pt: {
+				button : {
+						root: { class: 'button-padding'}
+				}
 		}
 })
 
