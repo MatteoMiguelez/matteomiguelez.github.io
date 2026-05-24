@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Contact from '@/home/components/contact/Contact.vue';
 import Projects from '@/home/components/projects/Projects.vue';
 import Career from '@/home/components/career/Career.vue';
 import Presentation from '@/home/components/presentation/Presentation.vue';
 import Menu from '@/home/components/menu/Menu.vue';
+import Contact from '@/home/components/contact/Contact.vue';
 </script>
 
 <template>
@@ -18,8 +18,8 @@ import Menu from '@/home/components/menu/Menu.vue';
     <div class="home__item">
       <Career id="career"></Career>
     </div>
-    <div class="home__item">
-      <Contact id="contact"></Contact>
+    <div class="home__item home__item-background">
+      <Contact></Contact>
     </div>
   </div>
 </template>
