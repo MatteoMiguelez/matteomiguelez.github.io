@@ -16,9 +16,6 @@ defineProps<{'items': MenuItem[] }>();
 <style scoped lang="scss">
 .menu-mobile {
   display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   z-index: 10;
   background-color: #0b1326;

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import MenuWeb from '@/home/components/menu/MenuWeb.vue';
-import MenuMobile from '@/home/components/menu/MenuMobile.vue';
+import Header from '@/home/components/layout/Header.vue';
+import Footer from '@/home/components/layout/Footer.vue';
 
 const items = ref([
   { label: 'Accueil', icon: 'pi pi-home', url: '#presentation' },
@@ -12,6 +12,6 @@ const items = ref([
 </script>
 
 <template>
-  <MenuWeb :items="items"></MenuWeb>
-  <MenuMobile :items="items"></MenuMobile>
+  <Header :items="items"></Header>
+  <Footer :items="items"></Footer>
 </template>

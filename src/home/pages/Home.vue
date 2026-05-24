@@ -2,7 +2,7 @@
 import Projects from '@/home/components/projects/Projects.vue';
 import Career from '@/home/components/career/Career.vue';
 import Presentation from '@/home/components/presentation/Presentation.vue';
-import Menu from '@/home/components/menu/Menu.vue';
+import Menu from '@/home/components/layout/Menu.vue';
 import Contact from '@/home/components/contact/Contact.vue';
 </script>
 
@@ -25,15 +25,12 @@ import Contact from '@/home/components/contact/Contact.vue';
 </template>
 
 <style scoped lang="scss">
-.test {
-  background-color: var(--p-surface-950);
-}
-
 .home {
   display: flex;
   flex-direction: column;
   gap: 98px;
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 32px;
 
   &__item {
     padding: 64px 64px;
@@ -44,7 +41,7 @@ import Contact from '@/home/components/contact/Contact.vue';
   }
 
   @media (max-width: 768px) {
-    padding: 64px 0;
+    padding-bottom: 128px;
 
     &__item {
       padding: 32px 32px;
