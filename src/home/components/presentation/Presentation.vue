@@ -83,6 +83,7 @@ import { PRESENTATION_DESCRIPTION } from '@/home/constants/presentation-descript
 
   &__buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
   }
 

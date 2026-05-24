@@ -21,7 +21,7 @@ import Buttons from '@/home/components/contact/Buttons.vue';
       <div class="contact__find-me">
         <span class="contact__find-me-text">RETROUVEZ-MOI SUR</span>
         <Buttons></Buttons>
-        <div class="contact__respond-time">Je réponds généralement sous 24h via email ou LinkedIn.</div>
+        <div class="contact__respond-time">Je réponds généralement sous 48h via email ou LinkedIn.</div>
       </div>
     </div>
   </div>

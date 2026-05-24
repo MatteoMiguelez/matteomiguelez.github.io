@@ -32,6 +32,10 @@ import Contact from '@/home/components/contact/Contact.vue';
   padding-top: 64px;
   padding-bottom: 32px;
 
+  #presentation, #projects, #career {
+    scroll-margin-top: 100px;
+  }
+
   &__item {
     padding: 64px 64px;
   }
