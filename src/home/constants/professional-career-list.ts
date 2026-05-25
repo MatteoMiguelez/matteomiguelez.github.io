@@ -1,25 +1,19 @@
-import type { ProfessionalCareerItem } from '@/home/types/professional-career-item.ts';
+import type { TimeLineItem } from '@/home/types/time-line-item.ts';
 
-export const PROFESSIONAL_CAREER_LIST: ProfessionalCareerItem[] = [
+export const PROFESSIONAL_CAREER_LIST: TimeLineItem[] = [
 		{
-				name: 'Développeur fullstack (CDI)',
+				name: 'Développeur fullstack',
 				dates: '2024 - Maintenant',
-				company: 'Wimova',
-				description: '',
-				isActive: true,
-		},
-		{
-				name: 'Développeur fullstack (Alternance)',
-				dates: '2023 - 2024',
-				company: 'Wimova',
-				description: 'Dans le cadre de ma 3ème et dernière année d\'étude',
-				isActive: false,
+				inactiveDates: '2023 - 2024 (Alternance)',
+				place: 'Wimova • Villeurbanne & Meyzieu, France',
+				description: 'Frameworks : SpringBoot & VueJs',
+				isLastElement: true,
 		},
 		{
 				name: 'Développeur fullstack (Stage)',
 				dates: 'Juin - Août 2024',
-				company: 'Okteo',
-				description: '',
-				isActive: false,
+				place: 'Okteo • Ceyzériat, France',
+				description: 'Frameworks : Symfony & Angular',
+				isLastElement: false,
 		},
 ]

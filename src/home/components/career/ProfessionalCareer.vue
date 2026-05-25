@@ -1,24 +1,23 @@
 <script setup lang="ts">
 import TitleSeparator from '@/home/components/TitleSeparator.vue';
+import { PROFESSIONAL_CAREER_LIST } from '@/home/constants/professional-career-list.ts';
 import TimeLine from '@/home/components/career/TimeLine.vue';
-import { SCHOOL_CAREER_LIST } from '@/home/constants/school-career-list.ts';
 
 </script>
 
 <template>
-  <div class="school-career">
-    <div class="school-career__profesional-data">
-      <h2> Parcours Scolaire </h2>
+  <div class="professional-career">
+    <div class="professional-career__profesional-data">
+      <h2> Parcours Professionel </h2>
       <TitleSeparator></TitleSeparator>
-      <span class="school-career__description">Dès le lycée, je me suis orienté vers une option informatique en seconde, puis la spécialité Numérique et Sciences Informatiques en première et terminale.
-      J'ai appris les bases du développement, que j'ai pu enrichir lors de mon Bachelor Universitaire et Technologique (BUT) Informatique.</span>
+      <span class="professional-career__description"> Au cours de mes études, je me suis progressivement inséré dans le monde professionnel : d'abord via un stage en deuxième année de BUT, puis en alternance pour ma troisième année. À l'issue de cette alternance, j'ai été embauché en CDI dans la même entreprise, ce qui m'a permis de poursuivre les projets déjà engagés tout en contribuant à de nouvelles missions.</span>
     </div>
-    <TimeLine :items="SCHOOL_CAREER_LIST"></TimeLine>
+    <TimeLine :items="PROFESSIONAL_CAREER_LIST"></TimeLine>
   </div>
 </template>
 
 <style scoped lang="scss">
-.school-career {
+.professional-career {
   display: flex;
   flex-wrap: wrap;
   gap: 98px;
@@ -35,9 +34,15 @@ import { SCHOOL_CAREER_LIST } from '@/home/constants/school-career-list.ts';
     }
   }
 
+  &__timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
   &__marker {
     background-color: var(--p-primary-100);
-    border-radius:32px;
+    border-radius: 32px;
     width: 20px;
     height: 20px;
   }
