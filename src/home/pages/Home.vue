@@ -37,7 +37,7 @@ import Contact from '@/home/components/contact/Contact.vue';
   }
 
   &__item {
-    padding: 64px 64px;
+    padding: 64px;
   }
 
   &__item-background {
@@ -48,7 +48,7 @@ import Contact from '@/home/components/contact/Contact.vue';
     padding-bottom: 128px;
 
     &__item {
-      padding: 32px 32px;
+      padding: 32px;
     }
   }
 }
