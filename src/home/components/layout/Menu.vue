@@ -5,8 +5,8 @@ import Footer from '@/home/components/layout/Footer.vue';
 
 const items = ref([
   { label: 'Accueil', icon: 'pi pi-home', url: '#presentation' },
-  { label: 'Parcours', icon: 'pi pi-briefcase', url: '#career' },
   { label: 'Projets', icon: 'pi pi-code', url: '#projects' },
+  { label: 'Parcours', icon: 'pi pi-briefcase', url: '#career' },
   { label: 'Contact', icon: 'pi pi-envelope', url: '#contact' },
 ])
 </script>

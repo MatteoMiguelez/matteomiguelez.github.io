@@ -10,7 +10,7 @@ defineProps<{'items': MenuItem[] }>();
 <template>
   <div class="footer">
     <div class="footer__copyright">
-      <span>© {{ copyrightYear }} Matteo Miguelez. Tous droits réservés.</span>
+      <span>© {{ copyrightYear }} Mattéo Miguelez. Tous droits réservés.</span>
     </div>
     <MenuMobile :items="items"></MenuMobile>
   </div>
