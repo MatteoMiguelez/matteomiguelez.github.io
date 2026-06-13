@@ -19,11 +19,14 @@ import TimeLine from '@/home/components/career/TimeLine.vue';
 <style scoped lang="scss">
 .professional-career {
   display: flex;
-  flex-wrap: wrap;
   gap: 98px;
 
   &__description {
     display: flex;
+  }
+
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
   }
 
   @media (max-width: 768px) {

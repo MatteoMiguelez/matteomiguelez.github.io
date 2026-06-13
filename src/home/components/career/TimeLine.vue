@@ -22,7 +22,15 @@ defineProps<{ 'items': TimeLineItem[] }>();
         </div>
         <h3>{{ item.name }}</h3>
         <div class="timeline__place">{{ item.place }}</div>
-        <div class="timeline__description">{{ item.description }}</div>
+        <div class="timeline__description">
+          {{ item.description }}
+        </div>
+        <div v-if="item.tasks" class="timeline__tasks">
+          Tâches :
+            <span v-for="task of item.tasks">
+              • {{ task }}
+            </span>
+        </div>
       </div>
     </div>
   </div>
@@ -82,9 +90,20 @@ defineProps<{ 'items': TimeLineItem[] }>();
   }
 
   &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    white-space: pre-wrap;
     padding-top: 8px;
     color: #94a3b8;
     font-style: italic;
+  }
+
+  &__tasks {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
   }
 }
 </style>

@@ -4,5 +4,6 @@ export type TimeLineItem = {
 		dates: string;
 		inactiveDates?: string;
 		description: string;
+		tasks?: string[];
 		isLastElement: boolean;
 }
