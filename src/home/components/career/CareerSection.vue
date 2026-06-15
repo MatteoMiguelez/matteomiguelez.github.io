@@ -25,8 +25,10 @@ defineProps<{
   display: flex;
   gap: 98px;
 
-  @media (max-width: 1100px) {
-    flex-wrap: wrap;
+  &__data {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
   }
 
   @media (max-width: 768px) {
@@ -37,10 +39,12 @@ defineProps<{
     }
   }
 
-  &__data {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
+
+    &__data {
+      max-width: unset;
+    }
   }
 }
 
