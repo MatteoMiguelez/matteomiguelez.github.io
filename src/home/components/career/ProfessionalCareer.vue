@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TitleSeparator from '@/home/components/TitleSeparator.vue';
+import SectionTitle from '@/home/components/SectionTitle.vue';
 import { PROFESSIONAL_CAREER_LIST } from '@/home/constants/professional-career-list.ts';
 import TimeLine from '@/home/components/career/TimeLine.vue';
 
@@ -8,8 +8,7 @@ import TimeLine from '@/home/components/career/TimeLine.vue';
 <template>
   <div class="professional-career">
     <div class="professional-career__profesional-data">
-      <h2> Parcours Professionel </h2>
-      <TitleSeparator></TitleSeparator>
+      <SectionTitle title="Parcours Professionel"></SectionTitle>
       <span class="professional-career__description"> Au cours de mes études, je me suis progressivement inséré dans le monde professionnel : d'abord via un stage en deuxième année de BUT, puis en alternance pour ma troisième année. À l'issue de cette alternance, j'ai été embauché en CDI dans la même entreprise, ce qui m'a permis de poursuivre les projets déjà engagés tout en contribuant à de nouvelles missions.</span>
     </div>
     <TimeLine :items="PROFESSIONAL_CAREER_LIST"></TimeLine>

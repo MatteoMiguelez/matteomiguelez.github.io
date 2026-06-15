@@ -1,13 +1,14 @@
 <script setup lang="ts">
-
+defineProps<{'title' : string}>()
 </script>
 
 <template>
-<div class="title-separator"></div>
+  <h2>{{ title }}</h2>
+  <div class="section-title"></div>
 </template>
 
 <style scoped lang="scss">
-.title-separator {
+.section-title {
   width: 40px;
   height: 4px;
   border-radius: 4px;

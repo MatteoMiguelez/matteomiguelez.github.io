@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TitleSeparator from '@/home/components/TitleSeparator.vue';
+import SectionTitle from '@/home/components/SectionTitle.vue';
 import TimeLine from '@/home/components/career/TimeLine.vue';
 import { SCHOOL_CAREER_LIST } from '@/home/constants/school-career-list.ts';
 
@@ -8,8 +8,7 @@ import { SCHOOL_CAREER_LIST } from '@/home/constants/school-career-list.ts';
 <template>
   <div class="school-career">
     <div class="school-career__profesional-data">
-      <h2> Parcours Scolaire </h2>
-      <TitleSeparator></TitleSeparator>
+      <SectionTitle title="Parcours Scolaire"></SectionTitle>
       <span class="school-career__description">Dès le lycée, je me suis orienté vers une option informatique en seconde, puis la spécialité Numérique et Sciences Informatiques en première et terminale.
       J'ai appris les bases du développement, que j'ai pu enrichir lors de mon Bachelor Universitaire et Technologique (BUT) Informatique.</span>
     </div>

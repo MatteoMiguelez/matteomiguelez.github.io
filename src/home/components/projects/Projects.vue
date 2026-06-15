@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Carousel } from 'primevue';
-import TitleSeparator from '@/home/components/TitleSeparator.vue';
+import SectionTitle from '@/home/components/SectionTitle.vue';
 import { PROJECTS } from '@/home/constants/projects.ts';
 import { computed, ref } from 'vue';
 import ProjectItem from '@/home/components/projects/ProjectItem.vue';
@@ -29,8 +29,7 @@ const orientation = computed(() => windowWidth.value <= 768 ? 'vertical' : 'hori
 <template>
   <div>
     <div>
-      <h2>Projets</h2>
-      <TitleSeparator></TitleSeparator>
+      <SectionTitle title="Projets"></SectionTitle>
     </div>
     <Carousel
         circular

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Button } from 'primevue';
-import TitleSeparator from '@/home/components/TitleSeparator.vue';
+import SectionTitle from '@/home/components/SectionTitle.vue';
 import Buttons from '@/home/components/contact/Buttons.vue';
 
 const EMAIL_LINK = 'mailto:matteo.miguelez@gmail.com';
@@ -8,8 +8,7 @@ const EMAIL_LINK = 'mailto:matteo.miguelez@gmail.com';
 
 <template>
   <div class="contact-mobile">
-    <h2>Contact</h2>
-    <TitleSeparator/>
+    <SectionTitle title="Contact"></SectionTitle>
     <div class="contact-mobile__buttons">
       <Button as="a" :href="EMAIL_LINK" target="_blank" size="large" severity="secondary"
               class="contact-mobile__mail">

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TitleSeparator from '@/home/components/TitleSeparator.vue';
+import SectionTitle from '@/home/components/SectionTitle.vue';
 import InfoItem from '@/home/components/contact/InfoItem.vue';
 import Buttons from '@/home/components/contact/Buttons.vue';
 </script>
@@ -8,8 +8,7 @@ import Buttons from '@/home/components/contact/Buttons.vue';
   <div class="contact">
     <div class="contact__content">
       <div class="contact__left">
-        <h2>Contact</h2>
-        <TitleSeparator/>
+        <SectionTitle title="Contact"></SectionTitle>
         <div class="contact__description">N'hésitez pas à m'écrire pour un projet, une collaboration ou juste pour
           échanger.
         </div>
