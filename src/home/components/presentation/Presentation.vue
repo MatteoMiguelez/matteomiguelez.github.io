@@ -22,7 +22,7 @@ import { PRESENTATION_DESCRIPTION } from '@/home/constants/presentation-descript
     </div>
     <div class="presentation__illustration">
       <div class="presentation__image-container">
-        <img src="/public/presentation-code.avif" alt="Code" height="350" class="presentation__img" />
+        <img src="/src/assets/imgs/presentation-code.avif" alt="Code" height="350" class="presentation__img" />
       </div>
     </div>
   </div>
