@@ -34,7 +34,6 @@ import Buttons from '@/home/components/contact/Buttons.vue';
   &__content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 96px;
     background-color: var(--p-surface-950);
     padding: 48px;
